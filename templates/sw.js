@@ -1,4 +1,4 @@
-const CACHE_NAME = 'macrum-v5';
+const CACHE_NAME = 'macrum-v6';
 
 // Caminhos ajustados partindo de dentro da pasta /templates
 const urlsToCache = [
