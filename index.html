@@ -3,86 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macrum – Sistema Integrado de Nutrição</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <!-- Fontes e Ícones -->
+    <title>Macrum | Gestão Nutricional Inteligente</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://googleapis.com" rel="stylesheet">
-    <script src="https://fontawesome.com" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header class="navbar">
-        <div class="container">
-            <div class="logo">
-                <span class="logo-box">M</span>
-                <span class="logo-text">MACRUM</span>
-            </div>
-            <nav class="nav-links">
-                <a href="#sobre">Sobre</a>
-                <a href="#funcionalidades">Funcionalidades</a>
-                <a href="https://ssleonardo2018.github.io/macrum-beta/templates/login.html" class="btn-primary">Acessar Beta</a>
+        <div class="container flex-nav">
+            <div class="logo">MACRUM<span>.</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#precos">Planos</a></li>
+                    <li><a href="#adquirir" class="btn-nav">Começar Agora</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <h1>Saúde nutricional levada a <span class="highlight">sério</span>.</h1>
-                    <p>Solução inovadora em nutrição clínica para agilizar o atendimento da população e integrar sistemas de saúde públicos e privados.</p>
-                    <div class="hero-actions">
-                        <a href="https://ssleonardo2018.github.io/macrum-beta/templates/login.html" class="btn-main">Experimentar Agora</a>
-                        <a href="#sobre" class="btn-outline">Saiba Mais</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <!-- Placeholder para representação do dashboard -->
-                    <div class="dashboard-preview">
-                        <div class="chart-line"></div>
-                        <div class="chart-pie"></div>
-                    </div>
-                </div>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Transforme a Saúde Nutricional da sua Instituição.</h1>
+            <p>O software completo para gestão de dietas, agendamentos e acompanhamento clínico. Eficiência para o profissional, saúde para o paciente.</p>
+            <div class="hero-btns">
+                <a href="#adquirir" class="btn-cta">Solicitar Demonstração</a>
+                <a href="#solucoes" class="btn-secondary">Conhecer Funcionalidades</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="sobre" class="about">
-            <div class="container">
-                <h2 class="section-title">Sobre o Projeto</h2>
-                <p class="about-text">O Macrum foi pensado para atender inicialmente as prefeituras e órgãos públicos, facilitando o trabalho dos nutricionistas e melhorando o acompanhamento da comunidade local. Com foco em eficiência, o sistema é a base sólida para um serviço de saúde integrado.</p>
-            </div>
-        </section>
-
-        <section id="funcionalidades" class="features">
-            <div class="container">
-                <h2 class="section-title">Funcionalidades em Destaque</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="icon">📁</div>
-                        <h3>Integração Total</h3>
-                        <p>Conecte-se diretamente aos sistemas de clínicas e hospitais.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="icon">🕒</div>
-                        <h3>Agilidade Real</h3>
-                        <p>Atendimentos e registros nutricionais muito mais rápidos.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="icon">🌐</div>
-                        <h3>Responsividade</h3>
-                        <p>Acesso rápido e layout que se adapta a qualquer dispositivo.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
+    <section id="solucoes" class="features">
         <div class="container">
-            <p>&copy; 2024 Macrum – Sistema Integrado de Nutrição</p>
+            <h2 class="section-title">Por que escolher o Macrum?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">🥗</div>
+                    <h3>Dietas sob Medida</h3>
+                    <p>Módulos específicos para diabéticos, atletas e nutrição escolar.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📅</div>
+                    <h3>Agendamento Ágil</h3>
+                    <p>Reduza faltas em 40% com nosso sistema de confirmação automática.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔔</div>
+                    <h3>Alertas Inteligentes</h3>
+                    <p>Lembretes de consultas e medicamentos direto no smartphone do paciente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Quem usa, aprova</h2>
+            <div class="test-grid">
+                <div class="test-card">
+                    <p>"O Macrum revolucionou a forma como gerimos a merenda escolar e o atendimento clínico."</p>
+                    <strong>- Ana Silva, Gestora de Saúde</strong>
+                </div>
+                <div class="test-card">
+                    <p>"Interface intuitiva e suporte técnico impecável. Recomendo para qualquer clínica."</p>
+                    <strong>- Dr. Ricardo Lima, Nutricionista</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precos" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Planos e Mensalidades</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Clínica Individual</h3>
+                    <div class="price">R$ 149<span>/mês</span></div>
+                    <ul>
+                        <li>Até 500 pacientes</li>
+                        <li>Agendamento online</li>
+                        <li>Suporte via Email</li>
+                    </ul>
+                    <a href="#" class="btn-price">Assinar Agora</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="badge">Mais Popular</div>
+                    <h3>Centro de Saúde</h3>
+                    <div class="price">R$ 499<span>/mês</span></div>
+                    <ul>
+                        <li>Pacientes Ilimitados</li>
+                        <li>Módulo de Nutrição Escolar</li>
+                        <li>Suporte 24/7 via WhatsApp</li>
+                    </ul>
+                    <a href="#" class="btn-price-alt">Assinar Agora</a>
+                </div>
+                <div class="price-card">
+                    <h3>Governo / Institucional</h3>
+                    <div class="price">Sob Consulta</div>
+                    <ul>
+                        <li>Integração total via API</li>
+                        <li>Treinamento de Equipe</li>
+                        <li>Servidor Dedicado</li>
+                    </ul>
+                    <a href="#" class="btn-price">Falar com Consultor</a>
+                </div>
+            </div>
+            <div class="payment-methods">
+                <p>Pagamento via: 💳 Cartão de Crédito, 📄 Boleto ou ⚡ PIX</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="adquirir" class="contact">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Pronto para elevar o nível da sua gestão?</h2>
+                <p>Deixe seus dados e um consultor entrará em contato em até 24h.</p>
+                <form id="macrumForm">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="E-mail Institucional" required>
+                    <select>
+                        <option>Selecione seu perfil</option>
+                        <option>Clínica Particular</option>
+                        <option>Prefeitura / Órgão Público</option>
+                        <option>Hospital</option>
+                    </select>
+                    <button type="submit" class="btn-submit">Solicitar Orçamento Grátis</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Macrum Software de Nutrição S.A. | Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script src="static/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
