@@ -1,7 +1,8 @@
 {
   "name": "Macrum",
   "short_name": "Macrum",
-  "start_url": "../templates/login.html",
+  "start_url": "/templates/login.html",
+  "scope": "/templates/",
   "display": "standalone",
   "background_color": "#006738",
   "theme_color": "#006738",
