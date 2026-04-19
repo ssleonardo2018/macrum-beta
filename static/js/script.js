@@ -1,35 +1,41 @@
-// Efeito de rolagem suave para links internos
+// Rolagem suave para links de âncora
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
 
-// Animação simples ao rolar a página (Intersection Observer)
-const observerOptions = {
-    threshold: 0.1
-};
+// Manipulação do Formulário
+const form = document.getElementById('macrumForm');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Simulação de envio (em um cenário real, aqui entraria o fetch para API)
+    const btn = document.querySelector('.btn-submit');
+    const originalText = btn.innerText;
+    
+    btn.innerText = "Enviando...";
+    btn.style.opacity = "0.7";
+    btn.disabled = true;
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.feature-card').forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'all 0.6s ease-out';
-    observer.observe(card);
+    setTimeout(() => {
+        alert("Obrigado! Recebemos sua solicitação. Nossa equipe comercial entrará em contato em breve.");
+        btn.innerText = originalText;
+        btn.style.opacity = "1";
+        btn.disabled = false;
+        form.reset();
+    }, 2000);
 });
 
-console.log("Macrum Landing Page carregada com sucesso.");
+// Efeito de Header ao rolar
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.2)';
+    } else {
+        header.style.boxShadow = 'none';
+    }
+});
