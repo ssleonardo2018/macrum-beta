@@ -1,13 +1,13 @@
-const CACHE_NAME = 'macrum-v4';
+const CACHE_NAME = 'macrum-v5';
 
 const urlsToCache = [
   './',
-  './index.html',
-  './static/css/login.css',
-  './static/js/app.js',
-  './manifest.json',
-  './static/img/192.png',
-  './static/img/512.png'
+  '../static/css/login.css',
+  
+  '../static/js/app.js',
+  '../manifest.json',
+  '../static/img/192.png',
+  '../static/img/512.png'
 ];
 
 // INSTALAR
