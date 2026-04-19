@@ -53,13 +53,14 @@ const app = {
 
 
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js')
-      .then(reg => console.log('Service Worker registrado!', reg))
-      .catch(err => console.log('Falha ao registrar Service Worker', err));
-  });
-}
+<script>
+  if ('serviceWorker' in navigator) {
+    // O escopo garante que o SW não toque na index.html da raiz
+    navigator.serviceWorker.register('/templates/sw.js', { scope: '/templates/' })
+      .then(reg => console.log('PWA ativo apenas em /templates/'))
+      .catch(err => console.error('Erro de registro:', err));
+  }
+</script>
 
 
 window.onload = () => app.init();
